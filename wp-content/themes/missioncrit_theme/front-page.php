@@ -15,8 +15,7 @@
       <div class='aboutText'>
         <h3>about</h3>
         <p>
-          Mission Crit is an unsanctioned bicycle criterium held on a short, technical circuit in the Mission District of San Francisco. It is the first race of its kind to win approval from the City of
-San Francisco. The race pits elite road racers, track cyclists, and bicycle messengers against each other on fixed-gear track bicycles in a fast-paced, high-adrenaline competition.
+          Mission Crit is an unsanctioned bicycle criterium held on a short, technical circuit in the Mission District of San Francisco. It is the first race of its kind to win approval from the City of San Francisco. The race pits elite road racers, track cyclists, and bicycle messengers against each other on fixed-gear track bicycles in a fast-paced, high-adrenaline competition.
         </p>
         <a href='#'>VIEW RACE HISTORY ></a>
       </div>
@@ -133,4 +132,7 @@ San Francisco. The race pits elite road racers, track cyclists, and bicycle mess
   </div> <!-- /.container -->
 </div> <!-- /.main -->
 
-<?php get_footer(); ?>
+<?php
+get_footer();
+
+?>

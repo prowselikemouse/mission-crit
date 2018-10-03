@@ -11,6 +11,12 @@ var gulp   = require('gulp'),
 		sourcemaps = require('gulp-sourcemaps'),
 		uglify = require('gulp-uglify');
 
+
+gulp.task('Hello', function(){
+	console.log('hello!');
+})
+
+
 gulp.task('bs', function() {
 	browserSync.init({
 		// if running on windows, change this to http://localhost

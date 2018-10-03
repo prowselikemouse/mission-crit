@@ -29,6 +29,24 @@
 
 		<div class='hamNav'>
 			HAMNAV
+			<ul>
+				<li>Home</li>
+				<li>History</li>
+				<ul>
+					<li>2018 - Mission Crit 5</li>
+					<li>2017 - Mission Crit 4</li>
+					<li>2016 - Mission Crit 3</li>
+					<li>2015 - Mission Crit 2</li>
+					<li>2014 - Mission Crit 1</li>
+				</ul>
+				<li>Race Info</li>
+				<li>Race Rules</li>
+				<li>SHOP</li>
+				<li>Sponsors</li>
+				<li>Contact</li>
+				<li>Register</li>
+				<li>Volunteer</li>
+			</ul>
 		</div>
 
   </div><!-- /.container -->

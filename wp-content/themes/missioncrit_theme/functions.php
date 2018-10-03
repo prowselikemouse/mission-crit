@@ -86,7 +86,11 @@ function hackeryou_scripts() {
     true //load in footer
   );
 
-	wp_enqueue_style( 'header.scss', get_template_directory_uri() .'sass/header.scss' );
+	wp_enqueue_style( 'header.scss', get_template_directory_uri() .'/sass/header.scss' );
+
+	wp_enqueue_style( 'style.css', get_template_directory_uri() .'/style.css' );
+
+	wp_enqueue_style( 'missioncrit-wp-style', get_stylesheet_uri() );
 }
 
 add_action( 'wp_enqueue_scripts', 'hackeryou_scripts');
