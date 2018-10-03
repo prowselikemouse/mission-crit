@@ -15,16 +15,21 @@
 
 <header>
   <div class="container">
-    <h1>
-      <a href="<?php echo home_url( '/' ); ?>" title="<?php bloginfo( 'name', 'display' ); ?>" rel="home">
-        <?php bloginfo( 'name' ); ?>
-      </a>
-    </h1>
+		<div class='logoAndTitle'>
 
-    <?php wp_nav_menu( array(
-      'container' => false,
-      'theme_location' => 'primary'
-    )); ?>
-  </div> <!-- /.container -->
+			<div class='logo'>
+				<img src="<?php bloginfo('template_directory'); ?>/images/mission-crit-logo.png" />
+			</div>
+	    <h1>
+	      <a href="<?php echo home_url( '/' ); ?>" title="<?php bloginfo( 'name', 'display' ); ?>" rel="home">
+	        <?php bloginfo( 'name' ); ?>
+	      </a>
+	    </h1>
+		</div>
+
+		<div class='hamNav'>
+			HAMNAV
+		</div>
+
+  </div><!-- /.container -->
 </header><!--/.header-->
-

@@ -85,6 +85,8 @@ function hackeryou_scripts() {
     null, // version number
     true //load in footer
   );
+
+	wp_enqueue_style( 'header.scss', get_template_directory_uri() .'sass/header.scss' );
 }
 
 add_action( 'wp_enqueue_scripts', 'hackeryou_scripts');

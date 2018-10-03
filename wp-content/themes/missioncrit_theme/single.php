@@ -1,5 +1,7 @@
 <?php get_header(); ?>
-
+<p>
+  Hey! I am editing single.php!
+</p>
 <div class="main">
   <div class="container">
     <div class="content">

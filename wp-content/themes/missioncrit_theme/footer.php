@@ -1,6 +1,6 @@
 <footer>
   <div class="container">
-    <p>&copy; HackerYou <?php echo date('Y'); ?></p>
+    <img src="<?php bloginfo('template_directory'); ?>/images/MC-logo-black.png" /><span>Website designed and developed by <a href="https://seanbriar.github.io/portfolio/" target="_blank">@seanbriar</a> + <a href="http://prowselikemouse.com/" target="_blank">@prowselikemouse</a></span>
   </div>
 </footer>
 
