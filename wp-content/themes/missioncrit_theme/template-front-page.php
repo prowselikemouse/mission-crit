@@ -1,4 +1,9 @@
-<?php get_header();  ?>
+<?php
+
+/* Template Name: Home
+
+*/
+get_header();  ?>
 
 <div class="main">
   <div class="container">
@@ -40,6 +45,8 @@
     <!-- Race Results -->
     <div class='raceResults'>
       <h1>2017 Race Results</h1>
+      <div class='raceTables'>
+
       <div class='resultsWomen'>
         <h3>women</h3>
         <table>
@@ -56,6 +63,7 @@
             <td>icon</td>
           </tr>
         </table>
+        <button>View Full Women's Race Results</button>
       </div>
 
       <div class='resultsMen'>
@@ -74,7 +82,9 @@
             <td>icon</td>
           </tr>
         </table>
+        <button>View Full Men's Race Results</button>
       </div>
+    </div>
     </div>
 
     <!-- Sponsers -->
@@ -86,12 +96,16 @@
     <!-- Contact -->
     <div class='contact'>
       <h1>CONTACT</h1>
+      <div class='contactContent'>
+
       <form>
-        <input type="text" placeholder="NAME" />
-        <input type="text" placeholder="EMAIL" />
-        <input type="text" placeholder="MESSAGE" />
+        <input class='formName' type="text" placeholder="NAME" />
+        <input class='formEmail'type="text" placeholder="EMAIL" />
+        <input class='formMessage' type="text" placeholder="MESSAGE" />
         <button>Submit</button>
       </form>
+      <div class='sponserVolunteer'>
+
       <div class='sponsorsContact'>
         <h3> SPONSOR</h3>
         <p>Wanna help blow up our shit? Email us at</p>
@@ -103,11 +117,13 @@
           Want to show your appreciation by donating labor or advice? Let us know how you can help or email us directly at <a href="mailTo">volunteer@missioncrit.com</a>
         </p>
       </div>
+    </div>
+    </div>
       <div class='mainlingList'>
         <p>
           Sign up for the mailing list to get updates abou tthe race/rad bike stuff/etc.
         </p>
-        <input type="email" placeholder="MAILING LIST" /><button>Sign Up</button>
+        <input class='mailingList' type="email" placeholder="MAILING LIST" /><button>Sign Up</button>
       </div>
     </div>
     <div class="content">
