@@ -1,5 +1,10 @@
 /*!
+<<<<<<< HEAD
 * Theme Name: missioncrit
+=======
+  Theme Name: missioncrit
+
+>>>>>>> 516061bdead7643ead02690bada8836ab47aac18
 */
 
 @import 'normalize';
@@ -35,4 +40,111 @@ body {
 
 .full {
 	width: 100%;
+}
+
+button {
+	color: white;
+	background-color: red;
+	padding: 10px;
+}
+
+/* Header */
+.logoAndTitle {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+a {
+  color: black;
+}
+
+/* HERO */
+
+.hero {
+	background-color: lightgrey;
+	color: white;
+	height: 400px;
+}
+
+/* ABOUT */
+.about {
+	background-color: black;
+	height: 400px;
+	display: flex;
+	justify-content: center;
+}
+
+.aboutText {
+	background-color: white;
+	color: black;
+	padding: 30px;
+	width: 70%;
+	height: 60%;
+	margin-top: 30px;
+}
+
+/* Instgram */
+.instagram {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 70%;
+}
+
+.image1, .image2, .image3 {
+	border: 1px solid darkgrey;
+	background-color: lightgrey;
+	height: 200px;
+	width: 200px;
+	margin: 0px 15px 0 15px;
+}
+
+/* 2017 Results */
+.raceTables {
+	display: flex;
+	flex-direction: row;
+}
+
+.resultsMen, .resultsWomen {
+	margin: 10px;
+}
+
+th {
+	border-top: 1px solid darkgrey;
+	border-bottom: 1px solid darkgrey;
+}
+
+
+/* Contact */
+.contact {
+	background-color: black;
+	color: white;
+}
+
+.contactContent {
+	display: flex;
+}
+
+.formName, .formEmail, .formMessage, .mailingList {
+	background-color: black;
+	color: white;
+	width: 300px;
+	margin: 5px;
+}
+
+.formMessage {
+	height: 200px;
+}
+
+.sponsorsContact {
+	a {
+		color: white;
+	}
+}
+
+.volunteerContact {
+	a {
+		color: white;
+	}
 }

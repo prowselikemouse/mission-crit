@@ -20,7 +20,7 @@
 			<div class='logo'>
 				<img src="<?php bloginfo('template_directory'); ?>/images/mission-crit-logo.png" />
 			</div>
-	    <h1>
+	    <h1 class="title">
 	      <a href="<?php echo home_url( '/' ); ?>" title="<?php bloginfo( 'name', 'display' ); ?>" rel="home">
 	        <?php bloginfo( 'name' ); ?>
 	      </a>
@@ -30,22 +30,22 @@
 		<div class='hamNav'>
 			HAMNAV
 			<ul>
-				<li>Home</li>
-				<li>History</li>
+				<li><a href="<?php echo home_url( '/' ); ?>">Home</a></li>
+				<li><a href="">History</li>
 				<ul>
-					<li>2018 - Mission Crit 5</li>
-					<li>2017 - Mission Crit 4</li>
-					<li>2016 - Mission Crit 3</li>
-					<li>2015 - Mission Crit 2</li>
-					<li>2014 - Mission Crit 1</li>
+					<li><a href="">2018 - Mission Crit 5</a></li>
+					<li><a href="">2017 - Mission Crit 4</a></li>
+					<li><a href="">2016 - Mission Crit 3</a></li>
+					<li><a href="">2015 - Mission Crit 2</a></li>
+					<li><a href="">2014 - Mission Crit 1</a></li>
 				</ul>
-				<li>Race Info</li>
-				<li>Race Rules</li>
-				<li>SHOP</li>
-				<li>Sponsors</li>
-				<li>Contact</li>
-				<li>Register</li>
-				<li>Volunteer</li>
+				<li><a href="">Race Info</a></li>
+				<li><a href="">Race Rules</a></li>
+				<li><a href="">SHOP</a></li>
+				<li><a href="">Sponsors</a></li>
+				<li><a href="">Contact</a></li>
+				<li><a href="">Register</a></li>
+				<li><a href="">Volunteer</a></li>
 			</ul>
 		</div>
 
