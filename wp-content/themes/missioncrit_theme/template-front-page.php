@@ -20,7 +20,11 @@ get_header();  ?>
       <div class='aboutText'>
         <h3>about</h3>
         <p>
-          Mission Crit is an unsanctioned bicycle criterium held on a short, technical circuit in the Mission District of San Francisco. It is the first race of its kind to win approval from the City of San Francisco. The race pits elite road racers, track cyclists, and bicycle messengers against each other on fixed-gear track bicycles in a fast-paced, high-adrenaline competition.
+          <?php
+            if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
+            <?php the_content(); ?>
+
+          <?php endwhile; ?>
         </p>
         <a href='#'>VIEW RACE HISTORY ></a>
       </div>
@@ -90,7 +94,20 @@ get_header();  ?>
     <!-- Sponsers -->
     <div class='sponsors'>
       <h1>SPONSORS</h1>
-      Sponsor logo/link, repeated
+      <?php if(get_field('sponsor')): ?>
+
+        	<ul>
+
+        	<?php while(has_sub_field('sponsor')):
+            $image = get_sub_field('image')
+            ?>
+            <img src='<?php echo $image['url']; ?>'>
+
+        	<?php endwhile; ?>
+
+        	</ul>
+
+        <?php endif; ?>
     </div>
 
     <!-- Contact -->
@@ -108,6 +125,10 @@ get_header();  ?>
 
       <div class='sponsorsContact'>
         <h3> SPONSOR</h3>
+        <?php
+          the_field('name');
+
+        ?>
         <p>Wanna help blow up our shit? Email us at</p>
         <a href='mailTo'>sponsors@missioncrit.com</a>
       </div>
@@ -127,22 +148,6 @@ get_header();  ?>
       </div>
     </div>
     <div class="content">
-
-
-      <?php // Start the loop ?>
-      <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
-
-        <h2><?php the_title(); ?></h2>
-        <?php the_content(); ?>
-        <div class="race-results">
-	        <p><?php the_field('race_results_title'); ?></p>
-        	<div class="race-results-01">
-        		<p><?php the_field('race_one'); ?></p>
-        	</div>
-        </div>
-
-
-      <?php endwhile; // end the loop?>
     </div> <!-- /.content -->
 
   </div> <!-- /.container -->
