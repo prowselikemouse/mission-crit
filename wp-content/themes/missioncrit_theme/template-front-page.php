@@ -32,18 +32,13 @@ get_header();  ?>
 
     <!-- Instagram Content -->
     <div class='instagram'>
-      <div class='image1'>
-        INSTA IMAGE ONE
-      </div>
-      <div class='image2'>
-        INSTA IMAGE TWO
-      </div>
-      <div class='image3'>
-        INSTA IMAGE THREE
-      </div>
+      <?php
+        
+
+      echo do_shortcode('[ap_instagram_slider]'); ?>
     </div>
     <div class='instagramLink'>
-      <a href='#'>FOLLOW US ON INSTAGRAM ></a>
+      <a href='#'>FOLLOW ON INSTAGRAM ></a>
     </div>
 
     <!-- Race Results -->
