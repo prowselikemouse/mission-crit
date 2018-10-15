@@ -44,6 +44,7 @@ get_header();  ?>
       <div class='raceTables'>
 
       <div class='resultsWomen'>
+        <h3>Women</h3>
         <?php if(have_rows('women')):
           while (have_rows('women')) : the_row();
             $rank = get_sub_field('rank');
@@ -52,25 +53,29 @@ get_header();  ?>
             $country = get_sub_field('country');
 
           ?>
-
-          <p>
-            <?php echo $rank; ?>
-          </p>
-          <p>
-            <?php echo $name; ?>
-          </p>
-          <p>
-            <?php echo $team; ?>
-          </p>
-          <p>
-            <?php echo $country; ?>
-          </p>
+          <table>
+            <tr>
+              <td>
+                <?php echo $rank; ?>
+              </td>
+              <td>
+                <?php echo $name; ?>
+              </td>
+              <td>
+                <?php echo $team; ?>
+              </td>
+              <td>
+                <?php echo $country; ?>
+              </td>
+            </tr>
+          </table>
         <?php endwhile; ?>
         <?php endif; ?>
         <button>View Full Women's Race Results</button>
       </div>
 
       <div class='resultsMen'>
+        <h3>Men</h3>
         <?php if(have_rows('men')):
           while (have_rows('men')) : the_row();
             $rank = get_sub_field('rank');
@@ -80,18 +85,22 @@ get_header();  ?>
 
           ?>
 
-          <p>
-            <?php echo $rank; ?>
-          </p>
-          <p>
-            <?php echo $name; ?>
-          </p>
-          <p>
-            <?php echo $team; ?>
-          </p>
-          <p>
-            <?php echo $country; ?>
-          </p>
+          <table>
+            <tr>
+              <td>
+                <?php echo $rank; ?>
+              </td>
+              <td>
+                <?php echo $name; ?>
+              </td>
+              <td>
+                <?php echo $team; ?>
+              </td>
+              <td>
+                <?php echo $country; ?>
+              </td>
+            </tr>
+          </table>
         <?php endwhile; ?>
         <?php endif; ?>
         <button>View Full Men's Race Results</button>
@@ -133,10 +142,6 @@ get_header();  ?>
 
       <div class='sponsorsContact'>
         <h3> SPONSOR</h3>
-        <?php
-          the_field('name');
-
-        ?>
         <p>Wanna help blow up our shit? Email us at</p>
         <a href='mailTo'>sponsors@missioncrit.com</a>
       </div>
