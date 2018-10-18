@@ -7,32 +7,38 @@
 
         <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
           <h1 class="entry-title"><?php the_title(); ?></h1>
+        </div>
 
-          
-          <?php
+        <div class='mainContent'>
 
-          $image = get_field('race_poster');
-          $size = 'full'; // (thumbnail, medium, large, full or custom size)
+            <div class='racePoster'>
 
-          if( $image ) {
+               <?php if( get_field('race_poster') ): ?>
 
-	           echo wp_get_attachment_image( $image, $size );
+	                <img class='racePoster' src="<?php the_field('race_poster'); ?>" />
 
-           }
+                <?php endif; ?>
+             </div>
 
-           ?>
-          <h3>Race Report</h3>
-          <div class="entry-content">
-            <?php the_content(); ?>
-            <?php wp_link_pages(array(
-              'before' => '<div class="page-link"> Pages: ',
-              'after' => '</div>'
-            )); ?>
-          </div><!-- .entry-content -->
-        </div><!-- #post-## -->
+
+         <div class="entry-content">
+           <h3>Race Report</h3>
+           <p>
+             /date/
+           </p>
+
+             <?php the_content(); ?>
+             <?php wp_link_pages(array(
+               'before' => '<div class="page-link"> Pages: ',
+               'after' => '</div>'
+             )); ?>
+             /photos/ /video/
+           </div><!-- .entry-content -->
+         </div>
+
 
         <div class='raceResults'>
-          <h1>2017 Race Results</h1>
+          <h1> Race Results</h1>
           <div class='raceTables'>
 
           <div class='resultsWomen'>
@@ -63,7 +69,7 @@
               </table>
             <?php endwhile; ?>
             <?php endif; ?>
-            <button>View Full Women's Race Results</button>
+            <button>Women's 2017 Final Results</button>
           </div>
 
           <div class='resultsMen'>
@@ -95,10 +101,11 @@
               </table>
             <?php endwhile; ?>
             <?php endif; ?>
-            <button>View Full Men's Race Results</button>
+            <button>Men's 2017 Final Results</button>
+          </div>
           </div>
         </div>
-        </div>
+        </div><!-- #post-## -->
 
         <div id="nav-below" class="navigation">
           <p class="nav-previous"><?php previous_post_link('%link', '&larr; %title'); ?></p>

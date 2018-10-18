@@ -19,7 +19,7 @@ get_header();  ?>
     <div class='about'>
       <div class='aboutText'>
         <h3>about</h3>
-        <p>
+        <p class='aboutContent'>
           <?php
             if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
             <?php the_content(); ?>
