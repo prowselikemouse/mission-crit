@@ -43,7 +43,7 @@ button {
 	padding: 10px;
 }
 
-/* Header */
+/////////////////////////////* Header */
 .logoAndTitle {
   display: flex;
   flex-direction: row;
@@ -54,7 +54,7 @@ a {
   color: black;
 }
 
-/* HERO */
+////////////////////////////* HERO */
 
 .hero {
 	background-color: lightgrey;
@@ -62,7 +62,7 @@ a {
 	height: 400px;
 }
 
-/* ABOUT */
+//////////////////////////* ABOUT */
 .about {
 	background-color: black;
 	height: 400px;
@@ -79,23 +79,7 @@ a {
 	margin-top: 30px;
 }
 
-/* Instgram */
-.instagram {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	width: 70%;
-}
-
-.image1, .image2, .image3 {
-	border: 1px solid darkgrey;
-	background-color: lightgrey;
-	height: 200px;
-	width: 200px;
-	margin: 0px 15px 0 15px;
-}
-
-/* 2017 Results */
+///////////////////////* 2017 Results */
 .raceTables {
 	display: flex;
 	flex-direction: row;
@@ -105,13 +89,8 @@ a {
 	margin: 10px;
 }
 
-th {
-	border-top: 1px solid darkgrey;
-	border-bottom: 1px solid darkgrey;
-}
 
-
-/* Contact */
+//////////////////////////* Contact */
 .contact {
 	background-color: black;
 	color: white;
@@ -144,7 +123,7 @@ th {
 	}
 }
 
-/* Footer */
+////////////////////////////* Footer */
 footer {
 	.container {
 		background-color: black;
@@ -154,3 +133,6 @@ footer {
 		color: white;
 	}
 }
+
+
+//////////////////////////* Single Blog Page */

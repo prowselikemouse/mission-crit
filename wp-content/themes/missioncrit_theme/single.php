@@ -1,7 +1,5 @@
 <?php get_header(); ?>
-<p>
-  Hey! I am editing single.php!
-</p>
+
 <div class="main">
   <div class="container">
     <div class="content">
@@ -9,31 +7,106 @@
 
         <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
           <h1 class="entry-title"><?php the_title(); ?></h1>
+        </div>
 
-          <div class="entry-meta">
-            <?php hackeryou_posted_on(); ?>
-          </div><!-- .entry-meta -->
+        <div class='mainContent'>
 
-          <div class="entry-content">
-            <?php the_content(); ?>
-            <?php wp_link_pages(array(
-              'before' => '<div class="page-link"> Pages: ',
-              'after' => '</div>'
-            )); ?>
-          </div><!-- .entry-content -->
+            <div class='racePoster'>
 
-          <div class="entry-utility">
-            <?php hackeryou_posted_in(); ?>
-            <?php edit_post_link( 'Edit', '<span class="edit-link">', '</span>' ); ?>
-          </div><!-- .entry-utility -->
+               <?php if( get_field('race_poster') ): ?>
+
+	                <img class='racePoster' src="<?php the_field('race_poster'); ?>" />
+
+                <?php endif; ?>
+             </div>
+
+
+             <div class="entry-content">
+               <p class='entryContent'>
+                 <?php the_content(); ?>
+                 <?php wp_link_pages(array(
+                   'before' => '<div class="page-link"> Pages: ',
+                   'after' => '</div>'
+                 )); ?>
+
+               </p>
+
+           </div><!-- .entry-content -->
+         </div>
+
+
+        <div class='raceResults'>
+          <h1> Race Results</h1>
+          <div class='raceTables'>
+
+          <div class='resultsWomen'>
+            <h3>Women</h3>
+            <?php if(have_rows('women')):
+              while (have_rows('women')) : the_row();
+                $rank = get_sub_field('rank');
+                $name = get_sub_field('name');
+                $team = get_sub_field('team');
+                $country = get_sub_field('country');
+
+              ?>
+              <table>
+                <tr>
+                  <td>
+                    <?php echo $rank; ?>
+                  </td>
+                  <td>
+                    <?php echo $name; ?>
+                  </td>
+                  <td>
+                    <?php echo $team; ?>
+                  </td>
+                  <td>
+                    <?php echo $country; ?>
+                  </td>
+                </tr>
+              </table>
+            <?php endwhile; ?>
+            <?php endif; ?>
+            <button>Women's 2017 Final Results</button>
+          </div>
+
+          <div class='resultsMen'>
+            <h3>Men</h3>
+            <?php if(have_rows('men')):
+              while (have_rows('men')) : the_row();
+                $rank = get_sub_field('rank');
+                $name = get_sub_field('name');
+                $team = get_sub_field('team');
+                $country = get_sub_field('country');
+
+              ?>
+
+              <table>
+                <tr>
+                  <td>
+                    <?php echo $rank; ?>
+                  </td>
+                  <td>
+                    <?php echo $name; ?>
+                  </td>
+                  <td>
+                    <?php echo $team; ?>
+                  </td>
+                  <td>
+                    <?php echo $country; ?>
+                  </td>
+                </tr>
+              </table>
+            <?php endwhile; ?>
+            <?php endif; ?>
+            <button>Men's 2017 Final Results</button>
+          </div>
+          </div>
+        </div>
         </div><!-- #post-## -->
 
-        <div id="nav-below" class="navigation">
-          <p class="nav-previous"><?php previous_post_link('%link', '&larr; %title'); ?></p>
-          <p class="nav-next"><?php next_post_link('%link', '%title &rarr;'); ?></p>
-        </div><!-- #nav-below -->
 
-        <?php comments_template( '', true ); ?>
+
 
       <?php endwhile; // end of the loop. ?>
 
