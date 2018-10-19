@@ -21,18 +21,16 @@
              </div>
 
 
-         <div class="entry-content">
-           <h3>Race Report</h3>
-           <p>
-             /date/
-           </p>
+             <div class="entry-content">
+               <p class='entryContent'>
+                 <?php the_content(); ?>
+                 <?php wp_link_pages(array(
+                   'before' => '<div class="page-link"> Pages: ',
+                   'after' => '</div>'
+                 )); ?>
 
-             <?php the_content(); ?>
-             <?php wp_link_pages(array(
-               'before' => '<div class="page-link"> Pages: ',
-               'after' => '</div>'
-             )); ?>
-             /photos/ /video/
+               </p>
+
            </div><!-- .entry-content -->
          </div>
 
@@ -107,10 +105,6 @@
         </div>
         </div><!-- #post-## -->
 
-        <div id="nav-below" class="navigation">
-          <p class="nav-previous"><?php previous_post_link('%link', '&larr; %title'); ?></p>
-          <p class="nav-next"><?php next_post_link('%link', '%title &rarr;'); ?></p>
-        </div><!-- #nav-below -->
 
 
 
