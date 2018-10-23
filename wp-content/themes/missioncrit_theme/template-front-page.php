@@ -32,7 +32,7 @@ get_header();  ?>
 
     <!-- Instagram Content -->
     <div class='instagram'>
-      <?php echo do_shortcode('[ap_instagram_slider]'); ?>
+      <?php echo do_shortcode('[instagram-feed carouselrows=1]'); ?>
     </div>
     <div class='instagramLink'>
       <a href='#'>FOLLOW ON INSTAGRAM ></a>
@@ -131,13 +131,8 @@ get_header();  ?>
     <div class='contact'>
       <h1>CONTACT</h1>
       <div class='contactContent'>
+        <?php echo do_shortcode('[contact-form-7 id="122" title="Contact form 1"]'); ?>
 
-      <form>
-        <input class='formName' type="text" placeholder="NAME" />
-        <input class='formEmail'type="text" placeholder="EMAIL" />
-        <input class='formMessage' type="text" placeholder="MESSAGE" />
-        <button>Submit</button>
-      </form>
       <div class='sponserVolunteer'>
 
       <div class='sponsorsContact'>
@@ -155,9 +150,9 @@ get_header();  ?>
     </div>
       <div class='mainlingList'>
         <p>
-          Sign up for the mailing list to get updates abou tthe race/rad bike stuff/etc.
+          Sign up for the mailing list to get updates about the race/rad bike stuff/etc.
         </p>
-        <input class='mailingList' type="email" placeholder="MAILING LIST" /><button>Sign Up</button>
+        <?php echo do_shortcode('[contact-form-7 id="123" title="Mailing List"]'); ?>
       </div>
     </div>
     <div class="content">
