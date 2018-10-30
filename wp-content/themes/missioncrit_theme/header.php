@@ -27,27 +27,19 @@
 	    </h1>
 		</div>
 
-		<div class='hamNav'>
-			HAMNAV
-			<ul>
-				<li><a href="<?php echo home_url( '/' ); ?>">Home</a></li>
-				<li><a href="">History</li>
-				<ul>
-					<li><a href="">2018 - Mission Crit 5</a></li>
-					<li><a href="">2017 - Mission Crit 4</a></li>
-					<li><a href="">2016 - Mission Crit 3</a></li>
-					<li><a href="">2015 - Mission Crit 2</a></li>
-					<li><a href="">2014 - Mission Crit 1</a></li>
-				</ul>
-				<li><a href="">Race Info</a></li>
-				<li><a href="">Race Rules</a></li>
-				<li><a href="">SHOP</a></li>
-				<li><a href="">Sponsors</a></li>
-				<li><a href="">Contact</a></li>
-				<li><a href="">Register</a></li>
-				<li><a href="">Volunteer</a></li>
-			</ul>
-		</div>
+	<div class="menu">
+		<a class='menu-trigger active'>
+		    <span></span>
+		</a>
+		<ul class="menu-ul slideMenu">
+			<li><a class="menu-item" href="#home" rel="relativeanchor">Home</a></li>
+			<li><a class="menu-item" href="#" rel="relativeanchor">History</a></li>
+			<li><a class="menu-item" href="#about-nav" rel="relativeanchor">About</a></li>
+			<li><a class="menu-item" href="#race-nav" rel="relativeanchor">Results</a></li>
+			<li><a class="menu-item" href="#partners-nav" rel="relativeanchor">Sponsors</a></li>
+			<li><a class="menu-item" href="#contact-nav" rel="relativeanchor">Contact</a></li>
+		</ul>
+	</div>
 
   </div><!-- /.container -->
 </header><!--/.header-->

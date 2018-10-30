@@ -9,14 +9,14 @@ get_header();  ?>
   <div class="container">
 
     <!-- Hero -->
-    <div class='hero'>
+    <div class='hero' id="#home">
       <h1>REGISTRATION OPENS 3/5</h1>
       *social media links*
       <button>red button</button>
     </div>
 
     <!-- About  -->
-    <div class='about'>
+    <div class='about' id="#about-nav">
       <div class='aboutText'>
         <h3>about</h3>
         <p class='aboutContent'>
@@ -39,7 +39,7 @@ get_header();  ?>
     </div>
 
     <!-- Race Results -->
-    <div class='raceResults'>
+    <div class='raceResults' id="#race-nav">
       <h1>2017 Race Results</h1>
       <div class='raceTables'>
 
@@ -109,7 +109,7 @@ get_header();  ?>
     </div>
 
     <!-- Sponsers -->
-    <div class='sponsors'>
+    <div class='sponsors' id="#partners-nav">
       <h1>SPONSORS</h1>
       <?php if(get_field('sponsor')): ?>
 
@@ -128,7 +128,7 @@ get_header();  ?>
     </div>
 
     <!-- Contact -->
-    <div class='contact'>
+    <div class='contact' id="#contact-nav">
       <h1>CONTACT</h1>
       <div class='contactContent'>
         <?php echo do_shortcode('[contact-form-7 id="122" title="Contact form 1"]'); ?>
