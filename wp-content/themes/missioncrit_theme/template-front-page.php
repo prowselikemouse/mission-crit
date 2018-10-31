@@ -35,7 +35,7 @@ get_header();  ?>
       <?php echo do_shortcode('[instagram-feed carouselrows=1]'); ?>
     </div>
     <div class='instagramLink'>
-      <a href='#'>FOLLOW ON INSTAGRAM ></a>
+      <a href='https://www.instagram.com/missioncrit/'>FOLLOW ON INSTAGRAM ></a>
     </div>
 
     <!-- Race Results -->
