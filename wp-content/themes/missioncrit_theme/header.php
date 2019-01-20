@@ -34,7 +34,7 @@
 		<ul class="menu-ul slideMenu">
 			<li><a class="menu-item" href="#home" rel="relativeanchor">Home</a></li>
 			<li><a class="menu-item" href="#" rel="relativeanchor">History</a></li>
-			<li><a class="menu-item" href="/2018/10/19/mission-crit-iii/">2018 - Mission Crit 3</a></li>
+			<li><a class="menu-item" href="#">2018 - Mission Crit 3</a></li>
 			<li><a class="menu-item" href="#about-nav" rel="relativeanchor">About</a></li>
 			<li><a class="menu-item" href="#race-nav" rel="relativeanchor">Results</a></li>
 			<li><a class="menu-item" href="#partners-nav" rel="relativeanchor">Sponsors</a></li>
